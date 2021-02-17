@@ -11,6 +11,8 @@ export default function Header2(props) {
                             Discover Latest Courses on React
                         </td>
                         <td>
+                        </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>
                             <img src={bg} className="right" /><br></br>
                         </td>
                     </tr>

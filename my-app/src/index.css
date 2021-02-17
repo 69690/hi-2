@@ -45,7 +45,13 @@ a {
   color: white;
   text-align: left;
   font-size: 16px;
-  margin: 0.8rem 13.715rem;
+  /* margin: 0.8rem 13.715rem; */
+  margin: 0.8rem 2.715rem;
   padding: 0rem 2rem;
   background-image: "./images/maskgp1.png";
+}
+
+.bgtrans {
+  margin: 0.8rem 13.715rem;
+  /* padding: 0rem 2rem; */
 }
