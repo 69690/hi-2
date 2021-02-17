@@ -35,6 +35,8 @@ function App() {
 
   // const {products} = {data};
 
+  const [cartItems, setCartItems] = useState([]);
+
   return (
     
     <div className="App">
@@ -55,7 +57,7 @@ function App() {
               </h4> */}
             {/* </Main> */}
             <main className="col-2">
-              <table>
+              <table> 
                 <tr>
                   <td>
                     <h3 className="left">All Courses</h3>
@@ -76,7 +78,7 @@ function App() {
                   return getDetails(element);
                 })}
             </main>
-            <Basket></Basket>
+            <Basket cartItems={cartItems}></Basket>
         </div>
     </div>
   );
