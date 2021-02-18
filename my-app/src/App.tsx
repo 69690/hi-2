@@ -30,12 +30,23 @@ import { useQuery } from 'react-query';
 // import data from './data';
 import { Course, CourseCard } from './ShowCard';
 import * as d from './mock.json';
+// let x : Course;
 
 function App() {
 
   // const {products} = {data};
 
+  //Cart State Variable
   const [cartItems, setCartItems] = useState([]);
+  //add to cart function
+  // const onAdd = (course: any) => {
+  //   const exist = cartItems.find((x) => x.id === course.id);
+  //   if (exist) {
+  //     console.log("ALREADY IN KART");
+  //   } else {
+  //     setCartItems([...cartItems, {...course, qty: 1}]);
+  //   }
+  // }
 
   return (
     
@@ -78,13 +89,16 @@ function App() {
                   return getDetails(element);
                 })}
             </main>
+            {/* <Basket onAdd={onAdd} cartItems={cartItems}></Basket> */}
             <Basket cartItems={cartItems}></Basket>
         </div>
     </div>
   );
 }
 
-function getDetails(element: any) {
+
+//getting course details
+function getDetails(element: any) {   //Get course details
   let course: Course = {
     id: element.id,
     title: element.title,
@@ -92,7 +106,7 @@ function getDetails(element: any) {
     price: element.price,
     disc: element.disc,
   };
-  return (
+  return (  //returning course card element
     <CourseCard 
       id = {element.id}
       title = {element.title}

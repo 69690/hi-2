@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./App.css";
 
+//interface course
 export interface Course {
     id: number;
     title: string;
@@ -11,6 +12,7 @@ export interface Course {
     disc: number;
 };
 
+//create course card component
 export function CourseCard(course: Course) {
     return (
         <ol className="gradient-list">

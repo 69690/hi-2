@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//shopping cart = basket for items
 export default function Basket(props) {
     const {cartItems} = props;
     return (
